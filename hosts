@@ -1,5 +1,5 @@
 [webservers]
-leotest2 ansible_host=10.1.0.5 
+ansible_host=192.168.168.[5:100]
 
 [webservers:vars]
 ansible_user=leo
