@@ -1,0 +1,6 @@
+[webservers]
+leotest2 ansible_host=10.1.0.5 
+
+[webservers:vars]
+ansible_user=leo
+ansible_password=Leo123456789/

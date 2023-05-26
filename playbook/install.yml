@@ -1,0 +1,14 @@
+---
+- name: deploy web server
+  hosts: webservers
+  become: yes 
+  tasks:
+   - name: apache2 install
+     apt:
+      name: apache2
+      state: present
+   - name: service apache2 restart
+     service:
+      name: apache2
+      state: restarted
+      enabled: yes
